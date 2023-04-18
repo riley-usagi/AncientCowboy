@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>locationsURL</key>
+	<string>https://gist.githubusercontent.com/riley-usagi/fc0d9e15e7654e2b0e1788b4637d7102/raw/e86862897c6f527329da417408b78db657e96114/locations.json</string>
+	<key>itemsURL</key>
+	<string>https://gist.githubusercontent.com/riley-usagi/48fdb43605415eac25702377bcce7ed4/raw/883e7a3e107430716acb57e941522f4dec730129/items.json</string>
+	<key>monstersURL</key>
+	<string>https://gist.githubusercontent.com/riley-usagi/2bd4790d9f3c989eed440a359f5cba13/raw/45aaba6d29fb71276669e90ae512275d20c90551/monsters.json</string>
+</dict>
+</plist>
