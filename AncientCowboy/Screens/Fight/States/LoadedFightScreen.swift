@@ -16,6 +16,11 @@ extension FightScreen {
       
       // Enemy
       VStack {
+        
+        let url = URL(string: "https://rurowiki.ru/media/monsters/\(enemy.innerID).gif")!
+        
+        AsyncImage(url: url)
+        
         Gauge(value: Double(enemy.hp), in: 0...Double(maxEnemyHp)) {
           HStack {
             Text("\(enemy.name)")
@@ -33,7 +38,7 @@ extension FightScreen {
     .onReceive(TimerManager.heroAttackTimer) { _ in
       
       if enemy.hp > 0 && hero.atk <= enemy.hp {
-      
+        
         enemy.hp -= hero.atk
         
       } else {

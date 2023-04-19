@@ -4,7 +4,20 @@ import SwiftUI
 /// Точка входа в приложение
 @main struct AncientCowboyApp: App {
   
+  
+  // MARK: - Parameters
+  
   @State var path: [RouteEnum] = [.loading]
+  
+  
+  // MARK: - Initializers
+  
+  init() {
+    URLSession.shared.configuration.requestCachePolicy = .returnCacheDataElseLoad
+  }
+  
+  
+  // MARK: - Body
   
   var body: some Scene {
     
@@ -43,7 +56,7 @@ import SwiftUI
               }
             }
           }
-      } 
+      }
     }
   }
 }

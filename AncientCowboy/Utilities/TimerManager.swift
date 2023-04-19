@@ -6,7 +6,7 @@ struct TimerManager {
   
   // MARK: - Parameters
   
-  static var heroAttackTimer = Timer.publish(every: 0.01, on: .main, in: .common)
+  static var heroAttackTimer = Timer.publish(every: 0.1, on: .main, in: .common)
   
   static func runTimer(_ timer: TimerEnum) {
     switch timer {
