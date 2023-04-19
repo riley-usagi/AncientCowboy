@@ -15,6 +15,7 @@
 		BF4D8E2129E97E0600E6BE7B /* InventoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D8E2029E97E0600E6BE7B /* InventoryScreen.swift */; };
 		BF4D8E2429E986F000E6BE7B /* InventoryCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D8E2229E986F000E6BE7B /* InventoryCD.swift */; };
 		BF4D8E2729E9B61800E6BE7B /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D8E2629E9B61800E6BE7B /* InventoryModel.swift */; };
+		BF76D8F729EFC2AF0065C9E9 /* AiDesign in Frameworks */ = {isa = PBXBuildFile; productRef = BF76D8F629EFC2AF0065C9E9 /* AiDesign */; };
 		BF837DC029E86CC500739EC1 /* LocationCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837DBE29E86CC500739EC1 /* LocationCD.swift */; };
 		BF837DC429E881B400739EC1 /* ActionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837DC329E881B400739EC1 /* ActionWrapper.swift */; };
 		BF837DC629E8821200739EC1 /* InnerViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837DC529E8821200739EC1 /* InnerViewAction.swift */; };
@@ -25,7 +26,6 @@
 		BF9741CB29EC89B300A476E9 /* LoadedFightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9741CA29EC89B300A476E9 /* LoadedFightScreen.swift */; };
 		BFAC5BD129ED26890070E8BB /* SafeMapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC5BD029ED26890070E8BB /* SafeMapError.swift */; };
 		BFAC5BD329ED26C20070E8BB /* ToSafeUnSafeObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC5BD229ED26C20070E8BB /* ToSafeUnSafeObjectProtocol.swift */; };
-		BFAC5BD629ED57310070E8BB /* AiDesign in Frameworks */ = {isa = PBXBuildFile; productRef = BFAC5BD529ED57310070E8BB /* AiDesign */; };
 		BFAC5BD929ED582A0070E8BB /* InitialInventoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC5BD829ED582A0070E8BB /* InitialInventoryScreen.swift */; };
 		BFAC5BDB29ED58730070E8BB /* IsLoadingInventoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC5BDA29ED58730070E8BB /* IsLoadingInventoryScreen.swift */; };
 		BFAC5BDD29ED58930070E8BB /* LoadedInventoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC5BDC29ED58930070E8BB /* LoadedInventoryScreen.swift */; };
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFAC5BD629ED57310070E8BB /* AiDesign in Frameworks */,
+				BF76D8F729EFC2AF0065C9E9 /* AiDesign in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +321,7 @@
 			);
 			name = AncientCowboy;
 			packageProductDependencies = (
-				BFAC5BD529ED57310070E8BB /* AiDesign */,
+				BF76D8F629EFC2AF0065C9E9 /* AiDesign */,
 			);
 			productName = AncientCowboy;
 			productReference = BF2687D129E69F200006EAC6 /* AncientCowboy.app */;
@@ -352,7 +352,7 @@
 			);
 			mainGroup = BF2687C829E69F200006EAC6;
 			packageReferences = (
-				BFAC5BD429ED57310070E8BB /* XCRemoteSwiftPackageReference "AiDesign" */,
+				BF76D8F529EFC2AF0065C9E9 /* XCRemoteSwiftPackageReference "AiDesign" */,
 			);
 			productRefGroup = BF2687D229E69F200006EAC6 /* Products */;
 			projectDirPath = "";
@@ -633,9 +633,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BFAC5BD429ED57310070E8BB /* XCRemoteSwiftPackageReference "AiDesign" */ = {
+		BF76D8F529EFC2AF0065C9E9 /* XCRemoteSwiftPackageReference "AiDesign" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:riley-usagi/AiDesign.git";
+			repositoryURL = "https://github.com/riley-usagi/AiDesign";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -644,9 +644,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BFAC5BD529ED57310070E8BB /* AiDesign */ = {
+		BF76D8F629EFC2AF0065C9E9 /* AiDesign */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BFAC5BD429ED57310070E8BB /* XCRemoteSwiftPackageReference "AiDesign" */;
+			package = BF76D8F529EFC2AF0065C9E9 /* XCRemoteSwiftPackageReference "AiDesign" */;
 			productName = AiDesign;
 		};
 /* End XCSwiftPackageProductDependency section */

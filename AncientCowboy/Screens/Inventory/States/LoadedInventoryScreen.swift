@@ -16,7 +16,6 @@ extension InventoryScreen {
               .typography(.h2Regular)
           }
           .padding()
-          Text("\(item.id)")
         }
       }
     }

@@ -77,3 +77,4 @@ fastlane/test_output
 
 keys.plist
 .DS_Store
+AncientCowboy.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
