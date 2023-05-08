@@ -1,4 +1,3 @@
-import AiDesign
 import SwiftUI
 
 extension InventoryScreen {
@@ -10,10 +9,8 @@ extension InventoryScreen {
         VStack {
           HStack {
             Text("InnerID: \(item.innerID)")
-              .typography(.h1Bold)
             Spacer()
             Text("Count: \(item.count)")
-              .typography(.h2Regular)
           }
           .padding()
         }

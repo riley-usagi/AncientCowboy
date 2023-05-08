@@ -15,7 +15,6 @@
 		BF4D8E2129E97E0600E6BE7B /* InventoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D8E2029E97E0600E6BE7B /* InventoryScreen.swift */; };
 		BF4D8E2429E986F000E6BE7B /* InventoryCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D8E2229E986F000E6BE7B /* InventoryCD.swift */; };
 		BF4D8E2729E9B61800E6BE7B /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D8E2629E9B61800E6BE7B /* InventoryModel.swift */; };
-		BF76D8F729EFC2AF0065C9E9 /* AiDesign in Frameworks */ = {isa = PBXBuildFile; productRef = BF76D8F629EFC2AF0065C9E9 /* AiDesign */; };
 		BF837DC029E86CC500739EC1 /* LocationCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837DBE29E86CC500739EC1 /* LocationCD.swift */; };
 		BF837DC429E881B400739EC1 /* ActionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837DC329E881B400739EC1 /* ActionWrapper.swift */; };
 		BF837DC629E8821200739EC1 /* InnerViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837DC529E8821200739EC1 /* InnerViewAction.swift */; };
@@ -98,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF76D8F729EFC2AF0065C9E9 /* AiDesign in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +319,6 @@
 			);
 			name = AncientCowboy;
 			packageProductDependencies = (
-				BF76D8F629EFC2AF0065C9E9 /* AiDesign */,
 			);
 			productName = AncientCowboy;
 			productReference = BF2687D129E69F200006EAC6 /* AncientCowboy.app */;
@@ -352,7 +349,6 @@
 			);
 			mainGroup = BF2687C829E69F200006EAC6;
 			packageReferences = (
-				BF76D8F529EFC2AF0065C9E9 /* XCRemoteSwiftPackageReference "AiDesign" */,
 			);
 			productRefGroup = BF2687D229E69F200006EAC6 /* Products */;
 			projectDirPath = "";
@@ -631,25 +627,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BF76D8F529EFC2AF0065C9E9 /* XCRemoteSwiftPackageReference "AiDesign" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/riley-usagi/AiDesign";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BF76D8F629EFC2AF0065C9E9 /* AiDesign */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BF76D8F529EFC2AF0065C9E9 /* XCRemoteSwiftPackageReference "AiDesign" */;
-			productName = AiDesign;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BFC0399D29E7DD9000BF9015 /* DataBase.xcdatamodeld */ = {

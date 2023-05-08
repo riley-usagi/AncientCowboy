@@ -1,9 +1,7 @@
 import Combine
 import SwiftUI
 
-
-/// Обёртка для подписки на События и преобразования их в Действиях на экранах
-@propertyWrapper public struct Action<T> {
+@propertyWrapper struct Action<T: InnerViewAction> {
   
   private let currentValue: CurrentValueSubject<T, Never>
   
@@ -13,18 +11,16 @@ import SwiftUI
     
     _ = eventSubject
     
-      .flatMap { receivedEvent -> AnyPublisher<InnerViewAction, Never> in
+      .flatMap { receivedEvent -> AnyPublisher<any InnerViewAction, Never> in
         return EventEnum.actionsByEvent(receivedEvent).publisher.eraseToAnyPublisher()
       }
-      
+    
       .compactMap { receivedAction in
         return receivedAction as? T
       }
-      
-      .receive(on: DispatchQueue.main)
     
       .subscribe(on: DispatchQueue.main)
-      
+    
       .assign(to: \.wrappedValue, on: self)
   }
   
@@ -33,6 +29,7 @@ import SwiftUI
     
     nonmutating set {
       currentValue.value = newValue
+      currentValue.value = T.default
     }
   }
   
@@ -40,6 +37,7 @@ import SwiftUI
     get {
       currentValue
         .compactMap({ $0 })
+        .drop { $0 == T.default }
         .eraseToAnyPublisher()
     }
   }

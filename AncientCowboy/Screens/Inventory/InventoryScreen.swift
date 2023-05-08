@@ -17,7 +17,7 @@ struct InventoryScreen: View {
     
     content
     
-      .onReceive($action.dropFirst()) { receivedAction in
+      .onReceive($action) { receivedAction in
         
         switch receivedAction {
           
@@ -58,6 +58,9 @@ extension InventoryScreen {
 
 extension InventoryScreen {
   enum InnerAction: InnerViewAction {
+    
+    static var `default`: InventoryScreen.InnerAction { .initial }
+    
     case initial
     case changeStateTo(ViewStateEnum)
     case itemDropped(innerID: Int)

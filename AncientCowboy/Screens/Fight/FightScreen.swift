@@ -18,7 +18,7 @@ struct FightScreen: View {
   
   var body: some View {
     content
-      .onReceive($action.dropFirst()) { receivedAction in
+      .onReceive($action) { receivedAction in
         
         switch receivedAction {
           
@@ -55,7 +55,10 @@ extension FightScreen {
 // MARK: - Actions
 
 extension FightScreen {
-  enum InnerAction {
+  enum InnerAction: InnerViewAction {
+    
+    static var `default`: FightScreen.InnerAction { .initial }
+
     case initial
     case changeStateTo(ViewStateEnum)
   }
