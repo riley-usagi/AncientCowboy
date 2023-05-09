@@ -55,7 +55,7 @@ extension FightScreen {
 // MARK: - Actions
 
 extension FightScreen {
-  enum InnerAction: InnerViewAction {
+  enum InnerAction: ViewAction {
     
     static var `default`: FightScreen.InnerAction { .initial }
 
