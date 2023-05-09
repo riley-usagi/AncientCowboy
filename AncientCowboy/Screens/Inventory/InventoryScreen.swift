@@ -57,7 +57,7 @@ extension InventoryScreen {
 // MARK: - Actions
 
 extension InventoryScreen {
-  enum InnerAction: InnerViewAction {
+  enum InnerAction: ViewAction {
     
     static var `default`: InventoryScreen.InnerAction { .initial }
     

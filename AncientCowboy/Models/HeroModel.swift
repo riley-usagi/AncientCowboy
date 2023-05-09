@@ -4,6 +4,7 @@ struct HeroModel: Codable {
   var name: String
   var hp: Int   = 1000
   var atk: Int  = 10
+  var exp: Int  = 0
   var currentLocation: LocationModel = .initial
 }
 

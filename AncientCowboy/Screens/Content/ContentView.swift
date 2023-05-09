@@ -27,6 +27,13 @@ struct ContentView: View {
           Image(systemName: "gear")
           Text("Settings")
         }
+      
+      HeroScreen()
+        .tag(TabItem.hero)
+        .tabItem {
+          Image(systemName: "figure.handball")
+          Text("Hero")
+        }
     }
     .navigationBarBackButtonHidden()
     
@@ -38,5 +45,6 @@ extension ContentView {
     case fight
     case inventory
     case settings
+    case hero
   }
 }

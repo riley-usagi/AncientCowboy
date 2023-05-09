@@ -1,7 +1,7 @@
 import Combine
 import SwiftUI
 
-@propertyWrapper struct Action<T: InnerViewAction> {
+@propertyWrapper struct Action<T: ViewAction> {
   
   private let currentValue: CurrentValueSubject<T, Never>
   
@@ -11,7 +11,7 @@ import SwiftUI
     
     _ = eventSubject
     
-      .flatMap { receivedEvent -> AnyPublisher<any InnerViewAction, Never> in
+      .flatMap { receivedEvent -> AnyPublisher<any ViewAction, Never> in
         return EventEnum.actionsByEvent(receivedEvent).publisher.eraseToAnyPublisher()
       }
     

@@ -20,6 +20,7 @@
 		BF837DC629E8821200739EC1 /* InnerViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837DC529E8821200739EC1 /* InnerViewAction.swift */; };
 		BF837DC829E882B600739EC1 /* ViewStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837DC729E882B600739EC1 /* ViewStateEnum.swift */; };
 		BF837DCA29E882E800739EC1 /* ViewStateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF837DC929E882E800739EC1 /* ViewStateError.swift */; };
+		BF86AC6A2A0A1B190079924D /* HeroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86AC692A0A1B190079924D /* HeroScreen.swift */; };
 		BF9741C729EC88B400A476E9 /* InitialFightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9741C629EC88B400A476E9 /* InitialFightScreen.swift */; };
 		BF9741C929EC898E00A476E9 /* IsLoadingFightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9741C829EC898E00A476E9 /* IsLoadingFightScreen.swift */; };
 		BF9741CB29EC89B300A476E9 /* LoadedFightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9741CA29EC89B300A476E9 /* LoadedFightScreen.swift */; };
@@ -63,6 +64,7 @@
 		BF837DC529E8821200739EC1 /* InnerViewAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerViewAction.swift; sourceTree = "<group>"; };
 		BF837DC729E882B600739EC1 /* ViewStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateEnum.swift; sourceTree = "<group>"; };
 		BF837DC929E882E800739EC1 /* ViewStateError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateError.swift; sourceTree = "<group>"; };
+		BF86AC692A0A1B190079924D /* HeroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroScreen.swift; sourceTree = "<group>"; };
 		BF9741C629EC88B400A476E9 /* InitialFightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialFightScreen.swift; sourceTree = "<group>"; };
 		BF9741C829EC898E00A476E9 /* IsLoadingFightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLoadingFightScreen.swift; sourceTree = "<group>"; };
 		BF9741CA29EC89B300A476E9 /* LoadedFightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadedFightScreen.swift; sourceTree = "<group>"; };
@@ -161,6 +163,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		BF86AC682A0A1B0B0079924D /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				BF86AC692A0A1B190079924D /* HeroScreen.swift */,
+			);
+			path = Hero;
+			sourceTree = "<group>";
+		};
 		BF9741C529EC88A100A476E9 /* States */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +267,7 @@
 			children = (
 				BFEFD00329E6AB190095E30E /* Content */,
 				BFC039A629E7DF4500BF9015 /* Fight */,
+				BF86AC682A0A1B0B0079924D /* Hero */,
 				BF4D8E1F29E97DC100E6BE7B /* Inventory */,
 				BFEFD00829E6B4AA0095E30E /* Loading */,
 				BFC039A329E7DF2C00BF9015 /* Settings */,
@@ -381,6 +392,7 @@
 				BFAC5BD329ED26C20070E8BB /* ToSafeUnSafeObjectProtocol.swift in Sources */,
 				BF4D8E2129E97E0600E6BE7B /* InventoryScreen.swift in Sources */,
 				BFEFD00F29E6B78E0095E30E /* EventEnum.swift in Sources */,
+				BF86AC6A2A0A1B190079924D /* HeroScreen.swift in Sources */,
 				BFC0399129E7DC3100BF9015 /* ItemModel.swift in Sources */,
 				BFAC5BD929ED582A0070E8BB /* InitialInventoryScreen.swift in Sources */,
 				BFC0398F29E7DC3100BF9015 /* HeroModel.swift in Sources */,

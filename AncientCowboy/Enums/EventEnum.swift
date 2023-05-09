@@ -11,7 +11,7 @@ extension EventEnum {
   /// Список действий совершаемых при определённых событиях
   /// - Parameter event: Событие
   /// - Returns: Массив действий
-  static func actionsByEvent(_ event: Self) -> [any InnerViewAction] {
+  static func actionsByEvent(_ event: Self) -> [any ViewAction] {
     switch event {
     case .initial:
       return []

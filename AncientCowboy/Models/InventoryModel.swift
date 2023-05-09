@@ -39,8 +39,6 @@ extension InventoryModel {
           InventoryCD.create(InventoryModel(innerID: enemy.drop1id))
         }
         
-      } else {
-        print("Dropped nothing")
       }
       
     } catch {
